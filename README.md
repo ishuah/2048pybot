@@ -9,11 +9,13 @@ Requirements
 ------------
 1. Firefox browser
 2. Selenium (python version)
+
 	$ sudo pip install selenium
 
 Instructions
 ------------
 
 Clone the repo and run 2048.py
+
 	$ python 2048.py
 
