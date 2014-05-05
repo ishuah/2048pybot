@@ -10,8 +10,6 @@ Requirements
 1. Firefox browser
 2. Selenium (python version)
 
-	$ sudo pip install selenium
-
 Instructions
 ------------
 
