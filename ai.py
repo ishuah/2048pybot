@@ -13,8 +13,8 @@ class AI:
 
 	def find_best_move(self):
 		best_move = 1
-		best_score = False
-		for x in range(1,5):
+		best_score = self.is_move_possible(1)
+		for x in range(2,5):
 			x_score = self.is_move_possible(x)
 			if x_score > best_score:
 				best_score = x_score
@@ -44,11 +44,10 @@ class AI:
 			tupple = self.get_column(grid, x)
 			tupple.reverse()
 		if move == 3:
-			tupple = grid[x]
+			tupple = list(grid[x])
 		if move == 4:
-			tupple = grid[x]
+			tupple = list(grid[x])
 			tupple.reverse()
-
 		return tupple
 
 	def is_move_possible(self, move):

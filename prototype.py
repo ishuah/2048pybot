@@ -15,7 +15,7 @@ class Prototype:
 		return grid
 
 	def get_start_grid(self):
-		return [[0,2,0,2], [0,0,0,0], [0,0,0,0], [0,0,0,0]]
+		return [[4,2,4,2], [8,4,0,0], [0,0,0,0], [0,0,0,0]]
 
 	def get_column(self, grid, x):
 		column = []
@@ -38,15 +38,15 @@ class Prototype:
 			tupple = self.get_column(grid, x)
 			tupple.reverse()
 		if move == 3:
-			tupple = grid[x]
+			tupple = list(grid[x])
 		if move == 4:
-			tupple = grid[x]
+			tupple = list(grid[x])
 			tupple.reverse()
 
 		return tupple
 
 	def is_move_possible(self, move):
-		grid = self.get_random_grid()
+		grid = self.get_start_grid()
 		score = False
 
 		#evaluate each tupple
